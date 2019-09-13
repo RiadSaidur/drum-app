@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manjari", sans-serif;
+}
+body {
+  background: #cbdeb4;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  height: 27px;
+  width: 27px;
+}
+.navbar {
+  height: 8%;
+  background-color: #b0d0c4;
+  color: #ff714f;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(187, 187, 187);
+}
+.navbar h1 {
+  text-shadow: 0 1px 0 rgb(145, 144, 144);
+}
+
+.bts-container {
+  height: 75%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beats {
+  height: 80%;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
+.hi,
+.bs,
+.fl {
+  background-color: #23ad78;
+}
+.cr,
+.mt,
+.oh {
+  background-color: #ff714f;
+}
+.sn,
+.st,
+.rc {
+  background-color: #ffcc63;
+}
+
+.beats div {
+  color: white;
+  border-radius: 8%;
+  border: 1px solid rgb(148, 148, 148);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beats div:nth-child(odd):active {
+  animation: pulse1 0.2s infinite;
+}
+
+.beats div:nth-child(even):active {
+  animation: pulse2 0.2s infinite;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  width: 100%;
+  background-color: #cbdeb4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.controls > a {
+  color: #ff714f;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0% 3%;
+  border: 1.5px solid #ff714f;
+}
+.credit {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.credit a {
+  text-decoration: none;
+  color: #23ad78;
+  font-weight: bolder;
+  display: flex;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+.credit a img {
+  height: 17px;
+  width: 17px;
+}
+
+@keyframes pulse1 {
+  0% {
+    background-color: #ff714f;
+  }
+  100% {
+    background-color: #23ad78;
+  }
+}
+@keyframes pulse2 {
+  100% {
+    background-color: #ff714f;
+  }
+  0% {
+    background-color: #23ad78;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .beats {
+    width: 100%;
+    height: 70%;
+  }
+}

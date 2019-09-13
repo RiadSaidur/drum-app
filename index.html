@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="beats-style.css" />
+    <link rel="icon" href="logo.png" type="image/gif" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
+      rel="stylesheet"
+    />
+    <title>REDpad</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h1><img class="logo" src="logo.png" alt="logo" /> REDpad</h1>
+      </div>
+      <div class="bts-container">
+        <div class="beats">
+          <div class="hi">
+            <h3>Hi Hats</h3>
+            <audio src="./assets/drums/hiHats.mp3" class="sound"></audio>
+          </div>
+          <div class="cr">
+            <h3>Crash</h3>
+            <audio src="./assets/drums/crash.mp3" class="sound"></audio>
+          </div>
+          <div class="sn">
+            <h3>Snare</h3>
+            <audio src="./assets/drums/snare.mp3" class="sound"></audio>
+          </div>
+          <div class="st">
+            <h3>Small Tom</h3>
+            <audio src="./assets/drums/808.mp3" class="sound"></audio>
+          </div>
+          <div class="bs">
+            <h3>Bass Drum</h3>
+            <audio src="./assets/drums/kicks.mp3" class="sound"></audio>
+          </div>
+          <div class="mt">
+            <h3>Medium Tom</h3>
+            <audio src="./assets/drums/clap.mp3" class="sound"></audio>
+          </div>
+          <div class="fl">
+            <h3>Floor</h3>
+            <audio src="./assets/drums/fill1.mp3" class="sound"></audio>
+          </div>
+          <div class="oh">
+            <h3>Open Hats</h3>
+            <audio src="./assets/drums/openHats.mp3" class="sound"></audio>
+          </div>
+          <div class="rc">
+            <h3>Ride Cymbal</h3>
+            <audio src="./assets/drums/percs.mp3" class="sound"></audio>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="controls">
+          <a href="#" class="play">play</a>
+          <a href="#" class="record">record</a>
+          <!-- <a href="#" class="append">append</a> -->
+          <a href="#" class="stop">stop</a>
+        </div>
+        <div class="credit">
+          <a href="https://github.com/deathcrush" target="blank"
+            ><img src="Octocat.png" alt="github" /> Saidur Rahman Riad</a
+          >
+          <a href="https://github.com/voomoo" target="blank"
+            ><img src="Octocat.png" alt="github" /> Rakibul Hasan</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="beats-script.js"></script>
+  </body>
+</html>
